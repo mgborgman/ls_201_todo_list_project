@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/whitespace-reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <title>Todos</title>
+</head>
+<body>
+    <input type="checkbox" name="show-nav-bar" id="show-nav-bar">
+    <label for="show-nav-bar">
+        <img class='menu-icon' src="img/responsive-hamburger.png" alt="menu icon">    
+    </label>
+
+    <aside>
+        <nav>
+            <h2>All Todos <span class="total-todo-count">18</span></h2>
+                
+            <ul>
+                <li class="active"><a href="#">02/16 <span class="todo-count">8</span></a></li>
+                <li><a href="#">03/16 <span class="todo-count">2</span></a></li>
+                <li><a href="#">04/16 <span class="todo-count">1</span></a></li>
+                <li><a href="#">05/16 <span class="todo-count">1</span></a></li>
+                <li><a href="#">06/16 <span class="todo-count">6</span></a></li>  
+            </ul>
+        </nav>
+
+        <nav>
+            <h2>Completed</h2>
+            <ul>
+                <li><s>02/15</s></li>
+                <li><s>03/15</s></li>
+                <li><s>04/15</s></li>
+                <li><s>05/15</s></li>
+                <li><s>06/15</s></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>        
+        <h1>02/16 <span class="todo-count">8</span></h1>
+
+        <ul>
+            <li><a href="#"><span>+</span>&nbsp; &nbsp; Add new to do</a></li>
+            <li>
+                <input type="checkbox" name="item-1" id="item-1">
+                <div id="open_modal">
+                    <a href="#" class="close"></a>
+                    <form>
+                        <div id="title-container">
+                            <label for="title">Title</label>
+                            <input type="text" name="title" id="title" placeholder="Item 2">
+                        </div>
+                        <div id="due-date-container">
+                            <label for="due_date">Due Date</label>
+                            <select name="due_date" id="due_date">
+                                <option value="" disabled selected>Day</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            /
+                            <select>
+                                <option class="default-option" value="" disabled selected>Month</option>
+                                <option value="1">January</option>
+                                <option value="2">February</option>
+                                <option value="3">March</option>            
+                            </select>
+                            /
+                            <select>
+                                <option class="default-option" value="" disabled selected>Year</option>
+                                <option value="1">2018</option>
+                                <option value="2">2017</option>
+                                <option value="3">2016</option>
+                            </select>
+                        </div>
+                        <div id="description-container">
+                            <label for="description">Description</label>
+                            <textarea name="description" id="description" placeholder="Description"></textarea>
+                        </div>
+                        <input id="save" type="button" name="save" value="Save">
+                        <input id="complete" type="button" name="complete" value="Mark As Complete">
+                    </form>
+                </div>     
+                <label for="item-1">Item 1</label>
+                <a href="#"><img src="img/delete-icon.png" alt="delete icon"></a>
+            </li>
+            <li>
+                <input type="checkbox" name="item-2" id="item-2">
+                <label for="item-2">Item 2</label>
+                <a href="#"><img src="img/delete-icon.png" alt="delete icon"></a>
+            </li>
+            <li>
+                <input type="checkbox" name="item-3" id="item-3">
+                <label for="item-3">Item 3</label>
+                <a href="#"><img src="img/delete-icon.png" alt="delete icon"></a>
+            </li>
+            <li>
+                <input type="checkbox" name="item-4" id="item-4">
+                <label for="item-4">Item 4</label>
+                <a href="#"><img src="img/delete-icon.png" alt="delete icon"></a>
+            </li>
+            <li>
+                <input type="checkbox" name="item-5" id="item-5">
+                <label for="item-5">Item 5</label>
+                <a href="#"><img src="img/delete-icon.png" alt="delete icon"></a>
+            </li>
+            <li>
+                <input type="checkbox" name="item-6" id="item-6">
+                <label for="item-6">Item 6</label>
+                <a href="#"><img src="img/delete-icon.png" alt="delete icon"></a>
+            </li>
+            <li>
+                <input type="checkbox" name="item-7" id="item-7">
+                <label for="item-7">Item 7</label>
+                <a href="#"><img src="img/delete-icon.png" alt="delete icon"></a>
+            </li>
+            <li>
+                <input type="checkbox" name="item-8" id="item-8">
+                <label for="item-8">Item 8</label>
+                <a href="#"><img src="img/delete-icon.png" alt="delete icon"></a>
+            </li>
+            <li>
+                <input type="checkbox" name="item-9" id="item-9">
+                <label for="item-9">Item 9</label>
+                <a href="#"><img src="img/delete-icon.png" alt="delete icon"></a>
+            </li>                            
+        </ul>
+    </main>
+</body>
+</html>
